@@ -12,7 +12,7 @@ window.onload = function () {
 
     CFInstall.check({
         mode: "overlay",
-        destination: "http://danilojrr.github.com/ChromeFrameDetector",
+        destination: window.location.href,
         //preventPrompt: true,
         onmissing: function () {
             hideAnimationContainer();

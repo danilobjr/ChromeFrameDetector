@@ -63,9 +63,14 @@ figure figcaption
     100% { opacity: 1; -webkit-transform: translateX(0px); }
 }
 
-/* GCF Overlay */
+/* GCF Iframe Overlay */
 
 .chromeFrameOverlayContent, .chromeFrameOverlayUnderlay
 {
     display: block;
+}
+
+.chromeFrameOverlayCloseBar
+{
+    display: none;
 }
