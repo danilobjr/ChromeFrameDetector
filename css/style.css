@@ -1,8 +1,41 @@
 body
 {
     font-family: arial;
+    overflow: hidden;
 }
 
+/* BACKGROUNDS */
+
+.bg 
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.green
+{
+    background-color: #255928;
+    top: -40%;
+    left: -38%;
+    -webkit-transform: rotateZ(58deg);
+    z-index: 3;
+}
+
+.red
+{
+    background-color: #A5332B;
+    top: -62.5%;
+    z-index: 2;
+}
+
+.yellow
+{
+    background-color: #A98E09;
+    z-index: 1;
+}
+
+/* LOGO n PHRASE */
 
 article#animation
 {
@@ -13,12 +46,15 @@ article#animation
     width: 726px;
     margin-top: -160px;
     margin-left: -363px;    
+    
+    z-index: 4;
 }
 
 figure img[src*="chrome"]
 {
-    position: absolute;    
+    position: absolute;        
     width: 170px;
+    right: 0;
     
     -webkit-animation-name: logo;
     -webkit-animation-duration: 2s;
@@ -29,10 +65,10 @@ figure img[src*="chrome"]
 figure figcaption
 {
     position: absolute;
-    left: 200px;
+    left: 60px;
     margin-top: 66px;
     font-size: 44px;
-    color: #606060;
+    color: #EEE;
     
     -webkit-animation-name: caption;
     -webkit-animation-duration: 2s;
@@ -47,14 +83,14 @@ figure figcaption
     0% { opacity: 0; top: 20px; }
     25% { opacity: 1; top: 0; -webkit-transform: rotateZ(0deg); }
     30% { -webkit-transform: rotateZ(0deg); }
-    80% { -webkit-transform: rotateZ(-1800deg); }
-    100% { -webkit-transform: rotateZ(-1800deg); }
+    80% { -webkit-transform: rotateZ(1800deg); }
+    100% { -webkit-transform: rotateZ(1800deg); }
 }
 
 @-webkit-keyframes caption 
 {
-    0% { opacity: 0; -webkit-transform: translateX(-380px); }
-    30% { opacity: 0; -webkit-transform: translateX(-380px); }
+    0% { opacity: 0; -webkit-transform: translateX(380px); }
+    30% { opacity: 0; -webkit-transform: translateX(380px); }
     60% { opacity: 0; }
     80% { opacity: 1; -webkit-transform: translateX(0px); }    
     100% { opacity: 1; -webkit-transform: translateX(0px); }
