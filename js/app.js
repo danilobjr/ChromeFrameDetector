@@ -2,7 +2,7 @@ window.load = function () {
   
     CFInstall.check({
         mode: "overlay",
-        destination: "http://www.waikiki.com"
+        destination: "http://danilojrr.github.com/ChromeFrameDetector"
     });
     
 };
