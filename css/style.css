@@ -9,30 +9,45 @@ body
 .bg 
 {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 2000px;
+    height: 1500px;
 }
 
 .green
 {
     background-color: #255928;
-    top: -40%;
-    left: -38%;
-    -webkit-transform: rotateZ(58deg);
+    top: -464px;
+    left: -973px;
+    -webkit-transform: rotateZ(58deg) skew(30deg);
     z-index: 3;
+    
+    -webkit-animation-name: bg_green;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
 }
 
 .red
 {
     background-color: #A5332B;
-    top: -62.5%;
+    top: -1223px;
     z-index: 2;
+    
+    -webkit-animation-name: bg_red;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
 }
 
 .yellow
 {
     background-color: #A98E09;
     z-index: 1;
+    
+    -webkit-animation-name: bg_yellow;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
 }
 
 /* LOGO n PHRASE */
@@ -40,7 +55,7 @@ body
 article#animation
 {
     position: absolute;
-    top: 50%;
+    top: 384px;
     left: 50%;
     height: 205px;
     width: 726px;
@@ -70,30 +85,59 @@ figure figcaption
     font-size: 44px;
     color: #EEE;
     
+    text-shadow: 2px 2px 7px black;
+    
     -webkit-animation-name: caption;
     -webkit-animation-duration: 2s;
     -webkit-animation-iteration-count: 1;
     -webkit-animation-timing-function: ease-in-out;
 }
 
-/* ANIMATIONS */
+/* GET THE CODE */
 
-@-webkit-keyframes logo 
+aside
 {
-    0% { opacity: 0; top: 20px; }
-    25% { opacity: 1; top: 0; -webkit-transform: rotateZ(0deg); }
-    30% { -webkit-transform: rotateZ(0deg); }
-    80% { -webkit-transform: rotateZ(1800deg); }
-    100% { -webkit-transform: rotateZ(1800deg); }
+    position: absolute;
+    margin: 30px;
+    z-index: 3;
+    
+    -webkit-animation-name: show_code;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    
+    -webkit-animation-name: shake_code;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
 }
 
-@-webkit-keyframes caption 
+aside a 
 {
-    0% { opacity: 0; -webkit-transform: translateX(380px); }
-    30% { opacity: 0; -webkit-transform: translateX(380px); }
-    60% { opacity: 0; }
-    80% { opacity: 1; -webkit-transform: translateX(0px); }    
-    100% { opacity: 1; -webkit-transform: translateX(0px); }
+    display: block;
+    padding: 8px 10px;
+    border: 1px solid gainsboro;
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px black;
+
+    background: rgb(238,238,238); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(238,238,238,1) 0%, rgba(204,204,204,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(238,238,238,1)), color-stop(100%,rgba(204,204,204,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* IE10+ */
+    background: linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */    
+    
+    -webkit-transition: -webkit-transform 200ms;
+}
+
+aside a:hover
+{
+    -webkit-transform: scale(1.1);
 }
 
 /* GCF Iframe Overlay */
