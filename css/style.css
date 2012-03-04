@@ -9,23 +9,27 @@ body
 .bg 
 {
     position: absolute;
+    /*
     width: 100%;
     height: 100%;
+    */
+    width: 2000px;
+    height: 1500px;
 }
 
 .green
 {
     background-color: #255928;
-    top: -40%;
-    left: -38%;
-    -webkit-transform: rotateZ(58deg);
+    top: -464px;
+    left: -973px;
+    -webkit-transform: rotateZ(58deg) skew(30deg);
     z-index: 3;
 }
 
 .red
 {
     background-color: #A5332B;
-    top: -62.5%;
+    top: -1223px;
     z-index: 2;
 }
 
@@ -42,7 +46,7 @@ article#animation
     /*display: none;*/
     
     position: absolute;
-    top: 50%;
+    top: 384px;
     left: 50%;
     height: 205px;
     width: 726px;
@@ -72,6 +76,8 @@ figure figcaption
     font-size: 44px;
     color: #EEE;
     
+    text-shadow: 2px 2px 7px black;
+    
     -webkit-animation-name: caption;
     -webkit-animation-duration: 2s;
     -webkit-animation-iteration-count: 1;
@@ -82,7 +88,7 @@ figure figcaption
 
 @-webkit-keyframes logo 
 {
-    0% { opacity: 0; top: 20px; }
+    0% { opacity: 0; top: 40px; }
     25% { opacity: 1; top: 0; -webkit-transform: rotateZ(0deg); }
     30% { -webkit-transform: rotateZ(0deg); }
     80% { -webkit-transform: rotateZ(1800deg); }
