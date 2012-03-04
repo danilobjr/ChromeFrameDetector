@@ -95,6 +95,53 @@ figure figcaption
     -webkit-animation-timing-function: ease-in-out;
 }
 
+/* GET THE CODE */
+
+aside
+{
+    position: absolute;
+    margin: 30px;
+    z-index: 3;
+    
+    -webkit-animation-name: show_code;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    
+    -webkit-animation-name: shake_code;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+}
+
+aside a 
+{
+    display: block;
+    padding: 8px 10px;
+    border: 1px solid gainsboro;
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px black;
+
+    background: rgb(238,238,238); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(238,238,238,1) 0%, rgba(204,204,204,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(238,238,238,1)), color-stop(100%,rgba(204,204,204,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* IE10+ */
+    background: linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */    
+    
+    -webkit-transition: -webkit-transform 200ms;
+}
+
+aside a:hover
+{
+    -webkit-transform: scale(1.1);
+}
+
 /* GCF Iframe Overlay */
 
 .chromeFrameOverlayContent, .chromeFrameOverlayUnderlay

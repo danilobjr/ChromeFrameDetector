@@ -41,3 +41,21 @@
     65% { opacity: 1; left: -973px; }
     100% { opacity: 1; }
 }
+
+@-webkit-keyframes show_code
+{
+    0% { opacity: 0; }
+    80% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-webkit-keyframes shake_code
+{
+    0% { left: 0; }
+    90% { left: 0; }
+    92% { left: -20px; }
+    94% { left: 20px; }
+    96% { left: -20px; }
+    98% { left: 20px; }
+    100% { left: 0; }
+}
