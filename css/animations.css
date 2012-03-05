@@ -1,5 +1,12 @@
 /* ANIMATIONS */
 
+@-webkit-keyframes container 
+{
+    0% { border: 2px solid white; border-radius: 5px; box-shadow: 0 0 10px white; }
+    80% { border: 2px solid white; border-radius: 5px; box-shadow: 0 0 10px white; }
+    100% { border: 2px solid #444; border-radius: 5px; box-shadow: 0 0 10px #444; }
+}
+
 @-webkit-keyframes logo 
 {
     0% { opacity: 0; top: 50px; }
@@ -17,23 +24,7 @@
     80% { -moz-transform: rotateZ(1800deg); }
     100% { -moz-transform: rotateZ(1800deg); }
 }
-/*
-@-webkit-keyframes logo_border
-{
-    0% { opacity: 0; -webkit-transform: scale(0.9); }
-    60% { opacity: 0; -webkit-transform: scale(0.9); }
-    80% { opacity: 1; -webkit-transform: scale(1.2); }
-    100% { opacity: 0; -webkit-transform: scale(1.5); }
-}
 
-@-moz-keyframes logo_border
-{
-    0% { opacity: 0; -moz-transform: scale(0.9); }
-    60% { opacity: 0; -moz-transform: scale(0.9); }
-    80% { opacity: 1; -moz-transform: scale(1.2); }
-    100% { opacity: 0; -moz-transform: scale(1.5); }
-}
-*/
 @-webkit-keyframes caption 
 {
     0% { opacity: 0; -webkit-transform: translateX(380px); }
@@ -88,7 +79,7 @@
 {
     0% { opacity: 0; }
     45% { opacity: 0; left: -2000px; }
-    65% { opacity: 1; left: -973px; }
+    65% { opacity: 1; left: -1256px; }
     100% { opacity: 1; }
 }
 

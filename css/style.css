@@ -4,6 +4,34 @@ body
     overflow: hidden;
 }
 
+/* CONTAINER */
+
+section#main
+{
+    position: absolute;
+    height: 650px;
+    width: 800px;
+    top: 50%;
+    left: 50%;
+    margin-top: -325px;    
+    margin-left: -400px;
+    overflow: hidden;
+    
+    border: 2px solid #444; 
+    border-radius: 5px; 
+    box-shadow: 0 0 10px #444;
+    
+    -webkit-animation-name: container;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    
+    -moz-animation-name: container;
+    -moz-animation-duration: 2s;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-in-out;
+}
+
 /* BACKGROUNDS */
 
 .bg 
@@ -17,7 +45,8 @@ body
 {
     background-color: #255928;
     top: -464px;
-    left: -973px;
+    /*left: -973px;*/
+    left: -1256px;
     -webkit-transform: rotateZ(58deg) skew(30deg);
     -moz-transform: rotateZ(58deg) skew(30deg);
     z-index: 3;
@@ -97,28 +126,7 @@ figure img
     -moz-animation-iteration-count: 1;
     -moz-animation-timing-function: ease-in-out;
 }
-/*
-figure div.animated_border
-{
-    border: 2px solid #7BAFDE;
-    position: absolute;
-    height: 149px;
-    width: 149px;
-    border-radius: 50%;
-    right: 9px;
-    top: 9px;
-    
-    -webkit-animation-name: logo_border;
-    -webkit-animation-duration: 3s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    
-    -moz-animation-name: logo_border;
-    -moz-animation-duration: 3s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: linear;
-}
-*/
+
 figure figcaption
 {
     position: absolute;
