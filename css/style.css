@@ -27,7 +27,7 @@ section#main
     -webkit-animation-timing-function: ease-in-out;
     
     -moz-animation-name: container;
-    -moz-animation-duration: 2s;
+    -moz-animation-duration: 1.5s;
     -moz-animation-iteration-count: 1;
     -moz-animation-timing-function: ease-in-out;
 }
@@ -45,7 +45,6 @@ section#main
 {
     background-color: #255928;
     top: -464px;
-    /*left: -973px;*/
     left: -1256px;
     -webkit-transform: rotateZ(58deg) skew(30deg);
     -moz-transform: rotateZ(58deg) skew(30deg);

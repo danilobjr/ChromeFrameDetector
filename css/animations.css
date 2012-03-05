@@ -2,9 +2,16 @@
 
 @-webkit-keyframes container 
 {
-    0% { border: 2px solid white; border-radius: 5px; box-shadow: 0 0 10px white; }
-    80% { border: 2px solid white; border-radius: 5px; box-shadow: 0 0 10px white; }
-    100% { border: 2px solid #444; border-radius: 5px; box-shadow: 0 0 10px #444; }
+    0% { border: 2px solid white; border-radius: 5px; box-shadow: 0 0 10px white; -webkit-transform: scale(0.9); }
+    80% { border: 2px solid white; border-radius: 5px; box-shadow: 0 0 10px white; -webkit-transform: scale(0.9); }
+    100% { border: 2px solid #444; border-radius: 5px; box-shadow: 0 0 10px #444; -webkit-transform: scale(1); }
+}
+
+@-moz-keyframes container 
+{
+    0% { border: 2px solid white; border-radius: 5px; box-shadow: 0 0 10px white; -moz-transform: scale(0.9); }
+    80% { border: 2px solid white; border-radius: 5px; box-shadow: 0 0 10px white; -moz-transform: scale(0.9); }
+    100% { border: 2px solid #444; border-radius: 5px; box-shadow: 0 0 10px #444; -moz-transform: scale(1); }
 }
 
 @-webkit-keyframes logo 
@@ -87,7 +94,7 @@
 {
     0% { opacity: 0; }
     45% { opacity: 0; left: -2000px; }
-    65% { opacity: 1; left: -973px; }
+    65% { opacity: 1; left: -1256px; }
     100% { opacity: 1; }
 }
 
